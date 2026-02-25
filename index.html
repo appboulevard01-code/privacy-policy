@@ -30,6 +30,7 @@ body{
 .header h1{
     font-size:34px;
     margin-bottom:8px;
+    color:#2195C3;
 }
 
 .updated{
@@ -48,12 +49,13 @@ body{
 h2{
     font-size:20px;
     margin-bottom:14px;
-    color:#222;
+    color:#2195C3;
 }
 
 h3{
     margin-top:18px;
     font-size:16px;
+    color:#2195C3;
 }
 
 p{
@@ -66,6 +68,20 @@ ul{
 
 li{
     margin-bottom:8px;
+}
+
+/* Highlight box for Local Storage */
+
+.privacy-highlight{
+    background:#e9f6fb;
+    border-left:5px solid #2195C3;
+    padding:18px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+.privacy-highlight strong{
+    color:#2195C3;
 }
 
 .footer{
@@ -118,24 +134,35 @@ This data is stored securely in Google's Firebase Firestore.
 
 <h3>B. Financial Transaction Data (Local Storage)</h3>
 
+<div class="privacy-highlight">
+
+<strong>Your financial data stays on your device.</strong>
+
 <ul>
 <li><b>Nature of Data:</b> All income, expenses, categories, notes, and budget entries you input.</li>
-<li><b>Storage Location:</b Stored locally on your device's internal database.</li>
-<li><b>Our Access:</b> We do not have access to your financial transactions.</li>
-<li><b>Backups:</b> If you enable optional Google Drive backup, a copy of your database is uploaded directly to your own private Google Drive account.</li>
+<li><b>Storage Location:</b> Stored locally on your device's internal database.</li>
+<li><b>Our Access:</b> We do <strong>NOT</strong> have access to your financial transactions.</li>
+<li><b>Server Upload:</b> Your financial data is <strong>never uploaded to our servers</strong>.</li>
+<li><b>Backups:</b> If you enable Google Drive backup, the data is stored directly in <strong>your own private Google Drive</strong>.</li>
 </ul>
+
+<p>
+This local-first design ensures your financial data remains private and under your full control.
+</p>
+
+</div>
 
 <h3>C. Sensitive Personal Information</h3>
 
 <ul>
-<li><b>Biometrics:</b> App Lock feature uses device biometrics. We never collect biometric data.</li>
-<li><b>Precise Location:</b> We do not collect GPS data. Coarse location (City/Country) may be derived from IP address by advertising partners.</li>
+<li><b>Biometrics:</b> App Lock uses your device’s fingerprint/face authentication. We never collect biometric templates.</li>
+<li><b>Precise Location:</b> We do not collect GPS data. Coarse location may be derived from IP address by advertising partners.</li>
 </ul>
 
 <h3>D. Media and Files</h3>
 
 <ul>
-<li>With your permission, the App may access device storage for database backup.</li>
+<li>The App may access device storage for database backup.</li>
 <li>The App may access your gallery for profile picture selection.</li>
 </ul>
 
@@ -145,12 +172,12 @@ This data is stored securely in Google's Firebase Firestore.
 <h2>3. Third-Party Services & Data Sharing</h2>
 
 <p>
-We use third-party services to help operate and improve the app. These services may collect information such as device identifiers and IP addresses.
+We use third-party services to operate and improve the app. These services may collect device identifiers or IP addresses.
 </p>
 
 <ul>
-<li><b>Google AdMob:</b> Used to display ads and provide analytics.</li>
-<li><b>Firebase Analytics:</b> Used to monitor app performance and engagement.</li>
+<li><b>Google AdMob:</b> Used to display ads and analytics.</li>
+<li><b>Firebase Analytics:</b> Used to monitor performance and engagement.</li>
 <li><b>Google Play Services:</b> Used for authentication and infrastructure.</li>
 <li><b>Google Drive API:</b> Used to backup and restore app database.</li>
 </ul>
@@ -162,8 +189,8 @@ We use third-party services to help operate and improve the app. These services 
 
 <ul>
 <li><b>Right to Access / Erasure:</b> Users can view or delete their data from the Profile screen.</li>
-<li><b>Right to Withdraw Consent:</b> Users can manage ad preferences in the Privacy Options settings.</li>
-<li><b>Legal Basis:</b> Processing is necessary for subscription management and app improvement.</li>
+<li><b>Right to Withdraw Consent:</b> Users can manage ad preferences from Privacy Options.</li>
+<li><b>Legal Basis:</b> Processing is necessary for subscription management and improving the app.</li>
 </ul>
 
 </div>
@@ -172,10 +199,10 @@ We use third-party services to help operate and improve the app. These services 
 <h2>5. CCPA / CPRA Compliance (For California Residents)</h2>
 
 <ul>
-<li><b>Right to Know:</b> Users can request categories of collected data.</li>
-<li><b>Right to Delete:</b> Account and Firestore data can be deleted via the Delete Account option.</li>
-<li><b>Notice of Sharing:</b> We do not sell personal data. Some identifiers may be shared with AdMob for advertising.</li>
-<li><b>Opt-Out:</b> Users may opt out of personalized ads from app settings.</li>
+<li><b>Right to Know:</b> Users may request categories of collected data.</li>
+<li><b>Right to Delete:</b> Account and Firestore data can be deleted using the Delete Account option.</li>
+<li><b>Notice of Sharing:</b> We do not sell personal data. Identifiers may be shared with AdMob for advertising.</li>
+<li><b>Opt-Out:</b> Users may disable personalized ads in the app settings.</li>
 </ul>
 
 </div>
@@ -184,7 +211,7 @@ We use third-party services to help operate and improve the app. These services 
 <h2>6. Data Retention & Deletion</h2>
 
 <ul>
-<li><b>Local Data:</b> Remains on your device until the app is removed or its data cleared.</li>
+<li><b>Local Data:</b> Stored on your device until the app is removed or data cleared.</li>
 <li><b>Account Data:</b> Stored in Firestore while the account is active. Deleting the account permanently removes associated data.</li>
 </ul>
 
@@ -195,8 +222,7 @@ We use third-party services to help operate and improve the app. These services 
 
 <p>
 Our app is not intended for children under 13 years of age.
-We do not knowingly collect personally identifiable information from children under 13.
-If you believe a child has provided personal information, please contact us.
+We do not knowingly collect personal information from children under 13.
 </p>
 
 </div>
@@ -205,7 +231,7 @@ If you believe a child has provided personal information, please contact us.
 <h2>8. Changes to This Policy</h2>
 
 <p>
-We may update this Privacy Policy periodically. Any updates will be posted on this page and the “Last Updated” date will be revised accordingly.
+We may update this Privacy Policy periodically. Any updates will be posted on this page with a revised "Last Updated" date.
 </p>
 
 </div>
@@ -213,9 +239,7 @@ We may update this Privacy Policy periodically. Any updates will be posted on th
 <div class="card">
 <h2>9. Contact Us</h2>
 
-<p>
-If you have any questions about this Privacy Policy or your data, please contact us:
-</p>
+<p>If you have any questions about this Privacy Policy or your data, please contact us:</p>
 
 <p class="contact">
 📧 appboulevard01@gmail.com
