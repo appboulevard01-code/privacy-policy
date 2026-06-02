@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseWard | Secure Expense Tracking & Budgeting</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2195C3;
+            --secondary-color: #4F81BD;
+            --bg-light: #F7F8FC;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 5%;
+            background: linear-gradient(135deg, var(--bg-light) 0%, #EEF1F6 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(33, 149, 195, 0.3);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            padding: 40px;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 5%;
+            background-color: var(--bg-light);
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .contact p {
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 5%;
+            background: #1A1C22;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #B0B0B0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            color: #6D6D72;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" class="logo">ExpenseWard</a>
+    <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+        <a href="https://appboulevard01-code.github.io/privacy-policy/index.html">Privacy Policy</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <h1>Take Control of Your <br>Wealth with ExpenseWard</h1>
+    <p>A smart, secure, and intuitive way to track your daily expenses, manage income, and reach your financial goals faster.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.expenseward" class="btn-primary">Download App</a>
+</header>
+
+<section id="features" class="features">
+    <div class="section-title">
+        <h2>Why Choose ExpenseWard?</h2>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <h3>Simple Tracking</h3>
+            <p>Record your spending and income in seconds. Categorize transactions to see where your money goes.</p>
+        </div>
+        <div class="card">
+            <h3>Google Drive Sync</h3>
+            <p>Never lose your data. Securely backup and restore your database using your own Google Drive account.</p>
+        </div>
+        <div class="card">
+            <h3>Budget Management</h3>
+            <p>Set monthly limits for different categories and get notified when you are close to your limit.</p>
+        </div>
+        <div class="card">
+            <h3>Deep Insights</h3>
+            <p>Visual charts and reports help you understand your financial habits over time.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Support & Inquiries</h2>
+    <p>Our team is here to help you with any questions regarding ExpenseWard.</p>
+    <p><strong>Email:</strong> <a href="mailto:help.expenseward@gmail.com">help.expenseward@gmail.com</a></p>
+</section>
+
+<footer>
+    <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="https://appboulevard01-code.github.io/privacy-policy/index.html">Privacy Policy</a>
+        <a href="#contact">Contact Support</a>
+    </div>
+    <p class="copyright">&copy; 2024 ExpenseWard. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
