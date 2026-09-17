@@ -1,252 +1,251 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExpenseWard | Secure Expense Tracking & Budgeting</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>ExpenseWard Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #2195C3;
-            --secondary-color: #4F81BD;
-            --bg-light: #F7F8FC;
-            --text-dark: #333333;
-            --text-muted: #666666;
-            --white: #FFFFFF;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Nunito', sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background-color: var(--white);
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f5f7fb;
+            color: #333;
         }
-
-        /* Navigation */
-        nav {
-            background: var(--white);
-            padding: 20px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
         }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 800;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .nav-links a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 100px 5%;
-            background: linear-gradient(135deg, var(--bg-light) 0%, #EEF1F6 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .header {
             text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: var(--secondary-color);
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            color: var(--text-muted);
-            max-width: 700px;
             margin-bottom: 40px;
         }
-
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
+        .header h1 {
+            font-size: 34px;
+            margin-bottom: 8px;
+            color: #2195C3;
         }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(33, 149, 195, 0.3);
+        .updated {
+            color: #777;
+            font-size: 14px;
         }
-
-        /* Features Section */
-        .features {
-            padding: 80px 5%;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--secondary-color);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
         .card {
-            padding: 40px;
-            background: var(--white);
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
+            background: white;
+            padding: 28px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.06);
         }
-
-        .card:hover {
-            transform: translateY(-10px);
+        h2 {
+            font-size: 20px;
+            margin-bottom: 14px;
+            color: #2195C3;
         }
-
-        .card h3 {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
+        h3 {
+            margin-top: 18px;
+            font-size: 16px;
+            color: #2195C3;
         }
-
-        /* Contact Section */
+        p {
+            line-height: 1.7;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .privacy-highlight {
+            background: #e9f6fb;
+            border-left: 5px solid #2195C3;
+            padding: 18px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .privacy-highlight strong {
+            color: #2195C3;
+        }
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+            margin-top: 30px;
+        }
         .contact {
-            padding: 80px 5%;
-            background-color: var(--bg-light);
-            text-align: center;
+            font-weight: 500;
         }
-
-        .contact h2 {
-            margin-bottom: 20px;
-            color: var(--secondary-color);
-        }
-
-        .contact p {
-            margin-bottom: 30px;
-        }
-
-        /* Footer */
-        footer {
-            padding: 40px 5%;
-            background: #1A1C22;
-            color: var(--white);
-            text-align: center;
-        }
-
-        .footer-links {
-            margin-bottom: 20px;
-        }
-
-        .footer-links a {
-            color: #B0B0B0;
+        a {
+            color: #2195C3;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 0.9rem;
         }
-
-        .footer-links a:hover {
-            color: var(--white);
-        }
-
-        .copyright {
-            color: #6D6D72;
-            font-size: 0.85rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .nav-links { display: none; }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-<nav>
-    <a href="#" class="logo">ExpenseWard</a>
-    <div class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-        <a href="https://appboulevard01-code.github.io/privacy-policy/index.html">Privacy Policy</a>
+<div class="container">
+    <div class="header">
+        <h1>ExpenseWard Privacy Policy</h1>
+        <div class="updated">Last Updated: September 2026</div>
     </div>
-</nav>
 
-<header class="hero">
-    <h1>Take Control of Your <br>Wealth with ExpenseWard</h1>
-    <p>A smart, secure, and intuitive way to track your daily expenses, manage income, and reach your financial goals faster.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.expenseward" class="btn-primary">Download App</a>
-</header>
-
-<section id="features" class="features">
-    <div class="section-title">
-        <h2>Why Choose ExpenseWard?</h2>
+    <div class="card">
+        <h2>1. Introduction</h2>
+        <p>
+            ExpenseWard is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application on the Google Play Store.
+            By using ExpenseWard, you agree to the collection and use of information in accordance with this policy.
+        </p>
     </div>
-    <div class="grid">
-        <div class="card">
-            <h3>Simple Tracking</h3>
-            <p>Record your spending and income in seconds. Categorize transactions to see where your money goes.</p>
+
+    <div class="card">
+        <h2>2. Information Collection and Use</h2>
+
+        <h3>A. Personal Information (Account Data)</h3>
+        <p>When you sign in using Google Sign-In, we collect:</p>
+        <ul>
+            <li>Name and Email Address</li>
+            <li>Unique Google Identifiers</li>
+            <li>Profile Picture (if provided)</li>
+        </ul>
+        <p>
+            <b>Purpose:</b> To manage your premium subscription status and identify your account across devices. This data is stored securely in Google's Firebase Firestore.
+        </p>
+
+        <h3>B. Financial Transaction Data (Local Storage)</h3>
+        <div class="privacy-highlight">
+            <strong>Your financial data stays on your device &amp; is encrypted.</strong>
+            <ul>
+                <li><b>Nature of Data:</b> All income, expenses, categories, notes, and budget entries you input.</li>
+                <li><b>Encryption:</b> Your local database is encrypted using <b>SQLCipher</b>. The encryption keys are stored securely in the <b>Android Keystore</b> system.</li>
+                <li><b>Our Access:</b> We do <strong>NOT</strong> have access to your financial transactions.</li>
+                <li><b>Server Upload:</b> Your financial data is <strong>never uploaded to our servers</strong>.</li>
+                <li><b>AI Assistant exception:</b> If you choose to use the AI assistant ("Wally"), whatever you type or say to it is sent to our AI provider to interpret your request — see Section F below. This is separate from, and much narrower than, the database described here: it's only what you actively tell the assistant, never the database itself, and only if you use that feature.</li>
+                <li><b>Notification-detected transactions:</b> If you enable Notification Access (Section G below), transactions suggested from your notifications are parsed and stored the same way — entirely on your device, in the same encrypted local database.</li>
+                <li><b>Backups:</b> If you enable Google Drive backup, data is stored directly in <b>your own private Google Drive</b>. ExpenseWard only accesses the specific backup files it creates.</li>
+            </ul>
+            <p>
+                This local-first design ensures your financial data remains private and under your full control.
+            </p>
         </div>
-        <div class="card">
-            <h3>Google Drive Sync</h3>
-            <p>Never lose your data. Securely backup and restore your database using your own Google Drive account.</p>
+
+        <h3>C. Payments &amp; Subscriptions</h3>
+        <p>
+            We offer premium features via in-app purchases. All payment transactions are processed securely by the <b>Google Play Store</b>. We do not collect, process, or store your credit card numbers or banking information.
+        </p>
+
+        <h3>D. Media and Files</h3>
+        <ul>
+            <li>The App may access device storage for database backup and restore functions.</li>
+            <li>The App may access your gallery if you choose to select a custom profile picture.</li>
+            <li>The App may access your microphone if you choose to use voice input with the AI assistant — see Section F for what this does and doesn't involve.</li>
+            <li>The App can save exported transaction data (CSV files) to your device's storage, if you choose to export.</li>
+        </ul>
+
+        <h3>E. Sensitive Personal Information</h3>
+        <ul>
+            <li><b>Biometrics:</b> App Lock uses your device's system-level authentication (Fingerprint/Face). We never collect or store your biometric templates.</li>
+            <li><b>Location:</b> We do not collect GPS data. Coarse location may be derived from IP address by advertising partners.</li>
+        </ul>
+
+        <h3>F. AI Assistant ("Wally") &amp; Voice Input</h3>
+        <div class="privacy-highlight">
+            <strong>Talking to Wally sends your message — and only your message — to our AI provider.</strong>
+            <ul>
+                <li><b>What's sent:</b> The text of what you type or say to the assistant, plus the names of your categories and accounts (e.g. "Groceries", "Cash") so it can understand your request. This is sent, via our own Firebase servers, to <b>DeepSeek</b>, the third-party AI service that powers the assistant.</li>
+                <li><b>What's NOT sent:</b> Your transaction history, account balances, and budget totals are never sent to DeepSeek, and never touch our servers for this feature either. The app calculates all of that on your device and only asks the AI to identify what you're asking for — the AI never sees your actual financial data, only your words.</li>
+                <li><b>Voice input:</b> If you use the microphone, your speech is converted to text on your device whenever possible. Only if your device can't do this on its own does the recording go to your device's speech recognition service (typically Google's) for transcription — and you're shown a clear explanation and asked to agree before this happens, every time it's needed. Voice input is entirely optional; you can always type instead.</li>
+                <li><b>Nothing is stored:</b> We do not save your conversations with the assistant, and we do not save any voice recordings or transcripts, on our servers — not even temporarily beyond what it takes to answer your request.</li>
+                <li><b>Every action needs your OK:</b> The assistant never adds, edits, or deletes a transaction, changes a budget, or exports data on its own. It always shows you exactly what it's about to do first and waits for you to confirm — nothing happens silently.</li>
+            </ul>
+            <p>
+                DeepSeek processes this data under its own privacy policy, linked in Section 3 below. We don't control and can't speak for their internal data practices beyond what they publish there, so we encourage you to review it if you'd like the details.
+            </p>
         </div>
-        <div class="card">
-            <h3>Budget Management</h3>
-            <p>Set monthly limits for different categories and get notified when you are close to your limit.</p>
-        </div>
-        <div class="card">
-            <h3>Deep Insights</h3>
-            <p>Visual charts and reports help you understand your financial habits over time.</p>
+
+        <h3>G. Notification Access (Auto-Detect Transactions)</h3>
+        <div class="privacy-highlight">
+            <strong>Notification Access is optional and used only to auto-detect transactions from your notifications, entirely on your device.</strong>
+            <ul>
+                <li><b>What it is:</b> If you turn on Notification Access in Settings, ExpenseWard uses Android's Notification Listener API to read the notifications posted on your device, so it can automatically suggest income and expense entries from things like bank, UPI, and payment app alerts — without you having to type them in manually.</li>
+                <li><b>Scope:</b> Because of how this Android permission works, once granted it technically lets the app read notifications from any app, not just banking apps — Android does not allow us to restrict this to a chosen list of apps. We only use it to look for transaction-like messages; unrelated notifications (chats, social media, news, etc.) are not parsed into anything and are not of interest to us.</li>
+                <li><b>Where processing happens:</b> All reading and parsing of notification text happens locally on your device. Nothing is uploaded to our servers, and nothing is sent to DeepSeek or any other third party as part of this feature.</li>
+                <li><b>What's kept:</b> Notification text is briefly held on-device in a temporary queue only until the app next opens and processes it. Anything that looks like a transaction becomes a suggested entry in the app, which you review and confirm — nothing is added automatically or silently. Anything that isn't recognized as a transaction is simply discarded and is not stored anywhere.</li>
+                <li><b>Your control:</b> Notification Access is off by default, only enabled if you turn it on via the Android system settings screen from within the app, and can be revoked at any time from your device's Settings with no effect on any other part of the app.</li>
+            </ul>
         </div>
     </div>
-</section>
 
-<section id="contact" class="contact">
-    <h2>Support & Inquiries</h2>
-    <p>Our team is here to help you with any questions regarding ExpenseWard.</p>
-    <p><strong>Email:</strong> <a href="mailto:help.expenseward@gmail.com">help.expenseward@gmail.com</a></p>
-</section>
-
-<footer>
-    <div class="footer-links">
-        <a href="#">Home</a>
-        <a href="#features">Features</a>
-        <a href="https://appboulevard01-code.github.io/privacy-policy/index.html">Privacy Policy</a>
-        <a href="#contact">Contact Support</a>
+    <div class="card">
+        <h2>3. Third-Party Services</h2>
+        <p>
+            We use verified third-party services to operate and improve the app. These services collect identifiers as described in their respective policies:
+        </p>
+        <ul>
+            <li><b>Google AdMob:</b> Used to display ads. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+            <li><b>Firebase Analytics:</b> Used to monitor performance. <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy &amp; Security</a></li>
+            <li><b>Google Play Services:</b> Used for authentication and app infrastructure. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+            <li><b>Google Drive API:</b> Used strictly for user-initiated backup and restore functions.</li>
+            <li><b>DeepSeek:</b> Powers the optional AI assistant ("Wally"). Receives only what you type or say to the assistant plus your category and account names — never your transaction history, balances, or budget figures. <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank">Privacy Policy</a></li>
+        </ul>
     </div>
-    <p class="copyright">&copy; 2024 ExpenseWard. All rights reserved.</p>
-</footer>
 
-</body>
-</html>
+    <div class="card">
+        <h2>4. GDPR Compliance (For EEA Users)</h2>
+        <ul>
+            <li><b>Right to Access / Erasure:</b> Users can view or delete their data from the Profile screen.</li>
+            <li><b>Right to Withdraw Consent:</b> Users can manage ad preferences within the app's Privacy Options, and can stop using the AI assistant, voice input, or Notification Access at any time with no effect on the rest of the app.</li>
+            <li><b>Legal Basis:</b> Processing is necessary for subscription management and improving the app experience. AI assistant processing and Notification Access are both based on your consent, given when you choose to enable them.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>5. CCPA / CPRA Compliance (For California Residents)</h2>
+        <ul>
+            <li><b>Right to Know:</b> Users may request categories of collected data.</li>
+            <li><b>Right to Delete:</b> Account and Firestore data can be deleted using the "Delete Account" option.</li>
+            <li><b>Notice of Sharing:</b> We do not sell personal data. Identifiers may be shared with AdMob for personalized advertising unless opted out.</li>
+            <li><b>Opt-Out:</b> Users may disable personalized ads in the app settings.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>6. Data Retention &amp; Deletion</h2>
+        <ul>
+            <li><b>Local Data:</b> Stored on your device until the app is uninstalled or data is cleared.</li>
+            <li><b>Account Data:</b> Stored in Firestore while the account is active. **Deleting your account via the app settings permanently and instantaneously removes all associated data from our servers.**</li>
+            <li><b>AI Assistant &amp; Voice:</b> Conversations with the assistant, and any voice recordings or transcripts, are not stored on our servers. They're used only to answer your request in the moment, then discarded — there is nothing to delete beyond what this policy already covers.</li>
+            <li><b>Notification Access:</b> Notification text is held on-device only, briefly and temporarily, until the app processes it into a suggested transaction (or discards it if it isn't one). It is never stored on our servers. Turning off Notification Access in Settings stops any further reading of notifications.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>7. Children's Privacy</h2>
+        <p>
+            Our app is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>8. Changes to This Policy</h2>
+        <p>
+            We may update this Privacy Policy periodically. Any updates will be posted on this page with a revised "Last Updated" date.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or your data, please contact us:</p>
+        <p class="contact">
+            📧 help.expenseward@gmail.com
+        </p>
+    </div>
+
+    <div class="footer">
+        © 2024 ExpenseWard. All rights reserved.
+    </div>
+</div>
+
+
+
+</body></html>
