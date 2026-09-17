@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExpenseWard Privacy Policy</title>
@@ -116,13 +114,14 @@
 
         <h3>B. Financial Transaction Data (Local Storage)</h3>
         <div class="privacy-highlight">
-            <strong>Your financial data stays on your device & is encrypted.</strong>
+            <strong>Your financial data stays on your device &amp; is encrypted.</strong>
             <ul>
                 <li><b>Nature of Data:</b> All income, expenses, categories, notes, and budget entries you input.</li>
                 <li><b>Encryption:</b> Your local database is encrypted using <b>SQLCipher</b>. The encryption keys are stored securely in the <b>Android Keystore</b> system.</li>
                 <li><b>Our Access:</b> We do <strong>NOT</strong> have access to your financial transactions.</li>
                 <li><b>Server Upload:</b> Your financial data is <strong>never uploaded to our servers</strong>.</li>
                 <li><b>AI Assistant exception:</b> If you choose to use the AI assistant ("Wally"), whatever you type or say to it is sent to our AI provider to interpret your request — see Section F below. This is separate from, and much narrower than, the database described here: it's only what you actively tell the assistant, never the database itself, and only if you use that feature.</li>
+                <li><b>Notification-detected transactions:</b> If you enable Notification Access (Section G below), transactions suggested from your notifications are parsed and stored the same way — entirely on your device, in the same encrypted local database.</li>
                 <li><b>Backups:</b> If you enable Google Drive backup, data is stored directly in <b>your own private Google Drive</b>. ExpenseWard only accesses the specific backup files it creates.</li>
             </ul>
             <p>
@@ -130,7 +129,7 @@
             </p>
         </div>
 
-        <h3>C. Payments & Subscriptions</h3>
+        <h3>C. Payments &amp; Subscriptions</h3>
         <p>
             We offer premium features via in-app purchases. All payment transactions are processed securely by the <b>Google Play Store</b>. We do not collect, process, or store your credit card numbers or banking information.
         </p>
@@ -149,7 +148,7 @@
             <li><b>Location:</b> We do not collect GPS data. Coarse location may be derived from IP address by advertising partners.</li>
         </ul>
 
-        <h3>F. AI Assistant ("Wally") & Voice Input</h3>
+        <h3>F. AI Assistant ("Wally") &amp; Voice Input</h3>
         <div class="privacy-highlight">
             <strong>Talking to Wally sends your message — and only your message — to our AI provider.</strong>
             <ul>
@@ -163,6 +162,18 @@
                 DeepSeek processes this data under its own privacy policy, linked in Section 3 below. We don't control and can't speak for their internal data practices beyond what they publish there, so we encourage you to review it if you'd like the details.
             </p>
         </div>
+
+        <h3>G. Notification Access (Auto-Detect Transactions)</h3>
+        <div class="privacy-highlight">
+            <strong>Notification Access is optional and used only to auto-detect transactions from your notifications, entirely on your device.</strong>
+            <ul>
+                <li><b>What it is:</b> If you turn on Notification Access in Settings, ExpenseWard uses Android's Notification Listener API to read the notifications posted on your device, so it can automatically suggest income and expense entries from things like bank, UPI, and payment app alerts — without you having to type them in manually.</li>
+                <li><b>Scope:</b> Because of how this Android permission works, once granted it technically lets the app read notifications from any app, not just banking apps — Android does not allow us to restrict this to a chosen list of apps. We only use it to look for transaction-like messages; unrelated notifications (chats, social media, news, etc.) are not parsed into anything and are not of interest to us.</li>
+                <li><b>Where processing happens:</b> All reading and parsing of notification text happens locally on your device. Nothing is uploaded to our servers, and nothing is sent to DeepSeek or any other third party as part of this feature.</li>
+                <li><b>What's kept:</b> Notification text is briefly held on-device in a temporary queue only until the app next opens and processes it. Anything that looks like a transaction becomes a suggested entry in the app, which you review and confirm — nothing is added automatically or silently. Anything that isn't recognized as a transaction is simply discarded and is not stored anywhere.</li>
+                <li><b>Your control:</b> Notification Access is off by default, only enabled if you turn it on via the Android system settings screen from within the app, and can be revoked at any time from your device's Settings with no effect on any other part of the app.</li>
+            </ul>
+        </div>
     </div>
 
     <div class="card">
@@ -172,7 +183,7 @@
         </p>
         <ul>
             <li><b>Google AdMob:</b> Used to display ads. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
-            <li><b>Firebase Analytics:</b> Used to monitor performance. <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy & Security</a></li>
+            <li><b>Firebase Analytics:</b> Used to monitor performance. <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy &amp; Security</a></li>
             <li><b>Google Play Services:</b> Used for authentication and app infrastructure. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
             <li><b>Google Drive API:</b> Used strictly for user-initiated backup and restore functions.</li>
             <li><b>DeepSeek:</b> Powers the optional AI assistant ("Wally"). Receives only what you type or say to the assistant plus your category and account names — never your transaction history, balances, or budget figures. <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank">Privacy Policy</a></li>
@@ -183,8 +194,8 @@
         <h2>4. GDPR Compliance (For EEA Users)</h2>
         <ul>
             <li><b>Right to Access / Erasure:</b> Users can view or delete their data from the Profile screen.</li>
-            <li><b>Right to Withdraw Consent:</b> Users can manage ad preferences within the app's Privacy Options, and can stop using the AI assistant or voice input at any time with no effect on the rest of the app.</li>
-            <li><b>Legal Basis:</b> Processing is necessary for subscription management and improving the app experience. AI assistant processing is based on your consent, given each time you choose to use it.</li>
+            <li><b>Right to Withdraw Consent:</b> Users can manage ad preferences within the app's Privacy Options, and can stop using the AI assistant, voice input, or Notification Access at any time with no effect on the rest of the app.</li>
+            <li><b>Legal Basis:</b> Processing is necessary for subscription management and improving the app experience. AI assistant processing and Notification Access are both based on your consent, given when you choose to enable them.</li>
         </ul>
     </div>
 
@@ -199,11 +210,12 @@
     </div>
 
     <div class="card">
-        <h2>6. Data Retention & Deletion</h2>
+        <h2>6. Data Retention &amp; Deletion</h2>
         <ul>
             <li><b>Local Data:</b> Stored on your device until the app is uninstalled or data is cleared.</li>
             <li><b>Account Data:</b> Stored in Firestore while the account is active. **Deleting your account via the app settings permanently and instantaneously removes all associated data from our servers.**</li>
-            <li><b>AI Assistant & Voice:</b> Conversations with the assistant, and any voice recordings or transcripts, are not stored on our servers. They're used only to answer your request in the moment, then discarded — there is nothing to delete beyond what this policy already covers.</li>
+            <li><b>AI Assistant &amp; Voice:</b> Conversations with the assistant, and any voice recordings or transcripts, are not stored on our servers. They're used only to answer your request in the moment, then discarded — there is nothing to delete beyond what this policy already covers.</li>
+            <li><b>Notification Access:</b> Notification text is held on-device only, briefly and temporarily, until the app processes it into a suggested transaction (or discards it if it isn't one). It is never stored on our servers. Turning off Notification Access in Settings stops any further reading of notifications.</li>
         </ul>
     </div>
 
@@ -234,5 +246,6 @@
     </div>
 </div>
 
-</body>
-</html>
+
+
+</body></html>
