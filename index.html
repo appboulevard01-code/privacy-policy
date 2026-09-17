@@ -89,7 +89,7 @@
 <div class="container">
     <div class="header">
         <h1>ExpenseWard Privacy Policy</h1>
-        <div class="updated">Last Updated: May 2026</div>
+        <div class="updated">Last Updated: September 2026</div>
     </div>
 
     <div class="card">
@@ -122,6 +122,7 @@
                 <li><b>Encryption:</b> Your local database is encrypted using <b>SQLCipher</b>. The encryption keys are stored securely in the <b>Android Keystore</b> system.</li>
                 <li><b>Our Access:</b> We do <strong>NOT</strong> have access to your financial transactions.</li>
                 <li><b>Server Upload:</b> Your financial data is <strong>never uploaded to our servers</strong>.</li>
+                <li><b>AI Assistant exception:</b> If you choose to use the AI assistant ("Wally"), whatever you type or say to it is sent to our AI provider to interpret your request — see Section F below. This is separate from, and much narrower than, the database described here: it's only what you actively tell the assistant, never the database itself, and only if you use that feature.</li>
                 <li><b>Backups:</b> If you enable Google Drive backup, data is stored directly in <b>your own private Google Drive</b>. ExpenseWard only accesses the specific backup files it creates.</li>
             </ul>
             <p>
@@ -138,13 +139,30 @@
         <ul>
             <li>The App may access device storage for database backup and restore functions.</li>
             <li>The App may access your gallery if you choose to select a custom profile picture.</li>
+            <li>The App may access your microphone if you choose to use voice input with the AI assistant — see Section F for what this does and doesn't involve.</li>
+            <li>The App can save exported transaction data (CSV files) to your device's storage, if you choose to export.</li>
         </ul>
 
         <h3>E. Sensitive Personal Information</h3>
         <ul>
-            <li><b>Biometrics:</b> App Lock uses your device’s system-level authentication (Fingerprint/Face). We never collect or store your biometric templates.</li>
+            <li><b>Biometrics:</b> App Lock uses your device's system-level authentication (Fingerprint/Face). We never collect or store your biometric templates.</li>
             <li><b>Location:</b> We do not collect GPS data. Coarse location may be derived from IP address by advertising partners.</li>
         </ul>
+
+        <h3>F. AI Assistant ("Wally") & Voice Input</h3>
+        <div class="privacy-highlight">
+            <strong>Talking to Wally sends your message — and only your message — to our AI provider.</strong>
+            <ul>
+                <li><b>What's sent:</b> The text of what you type or say to the assistant, plus the names of your categories and accounts (e.g. "Groceries", "Cash") so it can understand your request. This is sent, via our own Firebase servers, to <b>DeepSeek</b>, the third-party AI service that powers the assistant.</li>
+                <li><b>What's NOT sent:</b> Your transaction history, account balances, and budget totals are never sent to DeepSeek, and never touch our servers for this feature either. The app calculates all of that on your device and only asks the AI to identify what you're asking for — the AI never sees your actual financial data, only your words.</li>
+                <li><b>Voice input:</b> If you use the microphone, your speech is converted to text on your device whenever possible. Only if your device can't do this on its own does the recording go to your device's speech recognition service (typically Google's) for transcription — and you're shown a clear explanation and asked to agree before this happens, every time it's needed. Voice input is entirely optional; you can always type instead.</li>
+                <li><b>Nothing is stored:</b> We do not save your conversations with the assistant, and we do not save any voice recordings or transcripts, on our servers — not even temporarily beyond what it takes to answer your request.</li>
+                <li><b>Every action needs your OK:</b> The assistant never adds, edits, or deletes a transaction, changes a budget, or exports data on its own. It always shows you exactly what it's about to do first and waits for you to confirm — nothing happens silently.</li>
+            </ul>
+            <p>
+                DeepSeek processes this data under its own privacy policy, linked in Section 3 below. We don't control and can't speak for their internal data practices beyond what they publish there, so we encourage you to review it if you'd like the details.
+            </p>
+        </div>
     </div>
 
     <div class="card">
@@ -157,6 +175,7 @@
             <li><b>Firebase Analytics:</b> Used to monitor performance. <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy & Security</a></li>
             <li><b>Google Play Services:</b> Used for authentication and app infrastructure. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
             <li><b>Google Drive API:</b> Used strictly for user-initiated backup and restore functions.</li>
+            <li><b>DeepSeek:</b> Powers the optional AI assistant ("Wally"). Receives only what you type or say to the assistant plus your category and account names — never your transaction history, balances, or budget figures. <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank">Privacy Policy</a></li>
         </ul>
     </div>
 
@@ -164,8 +183,8 @@
         <h2>4. GDPR Compliance (For EEA Users)</h2>
         <ul>
             <li><b>Right to Access / Erasure:</b> Users can view or delete their data from the Profile screen.</li>
-            <li><b>Right to Withdraw Consent:</b> Users can manage ad preferences within the app's Privacy Options.</li>
-            <li><b>Legal Basis:</b> Processing is necessary for subscription management and improving the app experience.</li>
+            <li><b>Right to Withdraw Consent:</b> Users can manage ad preferences within the app's Privacy Options, and can stop using the AI assistant or voice input at any time with no effect on the rest of the app.</li>
+            <li><b>Legal Basis:</b> Processing is necessary for subscription management and improving the app experience. AI assistant processing is based on your consent, given each time you choose to use it.</li>
         </ul>
     </div>
 
@@ -184,11 +203,12 @@
         <ul>
             <li><b>Local Data:</b> Stored on your device until the app is uninstalled or data is cleared.</li>
             <li><b>Account Data:</b> Stored in Firestore while the account is active. **Deleting your account via the app settings permanently and instantaneously removes all associated data from our servers.**</li>
+            <li><b>AI Assistant & Voice:</b> Conversations with the assistant, and any voice recordings or transcripts, are not stored on our servers. They're used only to answer your request in the moment, then discarded — there is nothing to delete beyond what this policy already covers.</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>7. Children’s Privacy</h2>
+        <h2>7. Children's Privacy</h2>
         <p>
             Our app is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.
         </p>
